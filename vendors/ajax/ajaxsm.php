@@ -1,7 +1,8 @@
 <?php 
 require '../../include/fungsi.php';
 $search = $_GET["search"];
-$suratm = query("SELECT * FROM surat_masuk WHERE perihal_surat LIKE '%$search%'");
+$suratm = query("SELECT * FROM surat_masuk WHERE perihal_surat LIKE '%$search%' OR nomor_surat LIKE '%$search%'
+ORDER BY id DESC");
 ?>
 
         <table id="datatable-buttons" class="table table-hover table-bordered dt-responsive nowrap no-footer dtr-inline dataTable" style="border-collapse: collapse; border-spacing: 0px; width: 100%;" role="grid"     >

@@ -10,7 +10,7 @@ $suratm = query("SELECT * FROM surat_masuk ORDER BY nomor_urut DESC");
 <head>
 	<?php include('include/head.php'); ?>
     <script src="src/scripts/jquery.min.js"></script>
-    <script src="vendors/myjs/ajaksm.js"></script>
+    <script src="vendors/myjs/ajaxsm.js"></script>
 </head>
 <body>
 	<?php include('include/header.php'); ?>

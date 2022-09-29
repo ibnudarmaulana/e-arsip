@@ -3,7 +3,7 @@ require '../../include/fungsi.php';
 
 $search = $_GET["search"];
 $suratk = query("SELECT * FROM surat_keluar WHERE perihal_surat LIKE '%$search%'
-OR pengolah_surat LIKE '%$search%' OR nomor_surat LIKE '%$search%' ");
+OR pengolah_surat LIKE '%$search%' OR nomor_surat LIKE '%$search%' ORDER BY id DESC");
 
 ?>
 

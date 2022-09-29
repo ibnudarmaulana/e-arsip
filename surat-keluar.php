@@ -10,7 +10,7 @@ $suratk = query("SELECT * FROM surat_keluar ORDER BY nomor_urut DESC");
 <head>
 	<?php include('include/head.php'); ?>
     <script src="src/scripts/jquery.min.js"></script>
-    <script src="vendors/myjs/ajaksk.js"></script>
+    <script src="vendors/myjs/ajaxsk.js"></script>
 </head>
 <body>
 	<?php include('include/header.php'); ?>
